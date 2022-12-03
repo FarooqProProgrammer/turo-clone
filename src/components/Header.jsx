@@ -3,6 +3,12 @@ import './styles/Style.css'
 
 
 const Header = () => {
+
+    const showmodal = ()=>{
+        
+    }
+
+
   return (
     <>
     <div className='heder border-2 border-black main-color flex justify-content items-center'>
@@ -22,7 +28,7 @@ const Header = () => {
             <a href="" className='seo-pages-1uv25j8-Button'>Become a host</a>
             <div className="seo-pages-urhh13-NavbarDropdownContainer ep6bpc0">
             <label for="userNavbarDropdown-input" id="userNavbarDropdown-label" class="seo-pages-1l6xaef-StyledLabel e3weq3j0">Menu</label>
-            <button type="button" role="button" aria-label="open menu" aria-haspopup="true" data-toggle="true" class="seo-pages-1luye1r-NavbarDropdownToggle e1n8mg670">
+            <button onClick={showmodal} type="button" role="button" aria-label="open menu" aria-haspopup="true" data-toggle="true" class="seo-pages-1luye1r-NavbarDropdownToggle e1n8mg670">
                 <div aria-label="Menu" class="seo-pages-1ebbcux-AvatarBurgerContainer esvnhvd1">
                     <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="seo-pages-htr69o" role="img" version="1.1">
                         <path
