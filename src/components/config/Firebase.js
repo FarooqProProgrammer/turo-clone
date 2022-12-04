@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import {getAuth,signInWithEmailAndPassword,GoogleAuthProvider,signInWithPopup} from 'firebase/auth'
+import {getAuth,signInWithEmailAndPassword,FacebookAuthProvider,GoogleAuthProvider,signInWithPopup} from 'firebase/auth'
 
 const firebaseConfig = {
   apiKey: "AIzaSyBEzfwBVTaidpP-7oN88XP3gUGHKHPSGhA",
@@ -15,7 +15,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider(app);
-// const provider_fb = new FacebookAuthProvider(app);
+const provider_fb = new FacebookAuthProvider(app);
 provider.addScope('https://www.googleapis.com/auth/contacts.readonly');
 // provider_fb.setCustomParameters({
 //   'display': 'popup'
@@ -64,31 +64,31 @@ function google(){
 
 
 
-// function facebook(){
-//   signInWithPopup(auth, provider)
-//   .then((result) => {
-//     // The signed-in user info.
-//     const user = result.user;
+function facebook(){
+  signInWithPopup(auth, provider_fb)
+  .then((result) => {
+    // The signed-in user info.
+    const user = result.user;
 
-//     // This gives you a Facebook Access Token. You can use it to access the Facebook API.
-//     const credential = FacebookAuthProvider.credentialFromResult(result);
-//     const accessToken = credential.accessToken;
+    // This gives you a Facebook Access Token. You can use it to access the Facebook API.
+    const credential = FacebookAuthProvider.credentialFromResult(result);
+    const accessToken = credential.accessToken;
 
-//     // ...
-//   })
-//   .catch((error) => {
-//     // Handle Errors here.
-//     const errorCode = error.code;
-//     const errorMessage = error.message;
-//     // The email of the user's account used.
-//     const email = error.customData.email;
-//     // The AuthCredential type that was used.
-//     const credential = FacebookAuthProvider.credentialFromError(error);
+    // ...
+  })
+  .catch((error) => {
+    // Handle Errors here.
+    const errorCode = error.code;
+    const errorMessage = error.message;
+    // The email of the user's account used.
+    const email = error.customData.email;
+    // The AuthCredential type that was used.
+    const credential = FacebookAuthProvider.credentialFromError(error);
 
-//     // ...
-//   });
-// }
+    // ...
+  });
+}
 export {SignIn,
   google,
-// facebook
+facebook
 }

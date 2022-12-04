@@ -4,8 +4,8 @@ import './styles/Style.css'
 import { Button, Modal } from 'antd';
 import Input from 'antd/es/input/Input';
 import { SignIn ,
-    google,
-    // facebook
+    // google,
+    facebook
 } from './config/Firebase';
 const Header = () => {
  
@@ -15,12 +15,12 @@ const Header = () => {
     const [passwords,setPassword] = useState();
     
         const openFB = async()=>{
-            // await facebook();
+            await facebook();
         }
 
-    const Google = async()=>{
-        await google()
-    }
+    // const Google = async()=>{
+    //     await google()
+    // }
 
     const showModal = () => {
       setIsModalOpen(true);
@@ -107,7 +107,7 @@ const Header = () => {
                 <div className="mt-2  input_box w-full h-[60px] ">
                         <Button onClick={Check} className='w-full h-full bg-[#593cfb] text-2xl text-white'>Log in</Button>
                 </div>
-                <button onClick={Google} className= "mt-5 e1cx0oj30 seo-pages-miqn20-Button-AuthButton" type="button">
+                {/* <button onClick={Google} className= "mt-5 e1cx0oj30 seo-pages-miqn20-Button-AuthButton" type="button">
                     <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="seo-pages-60w4ze" role="img" version="1.1">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M21.6 12.227c0-.709-.064-1.39-.182-2.045H12v3.868h5.382a4.6 4.6 0 0 1-1.996 3.018v2.51h3.232c1.891-1.742 2.982-4.305 2.982-7.35Z" fill="#4285F4"></path>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M12 22c2.7 0 4.964-.895 6.618-2.423l-3.232-2.509c-.895.6-2.04.955-3.386.955-2.605 0-4.81-1.76-5.595-4.123H3.064v2.59A9.996 9.996 0 0 0 12 22Z" fill="#34A853"></path>
@@ -120,11 +120,11 @@ const Header = () => {
                         ></path>
                     </svg>
                     Continue with Google
-                </button>
+                </button> */}
 
 
 
-                <button onClick={openFB} class="e1cx0oj30 seo-pages-miqn20-Button-AuthButton" type="button">
+                <button onClick={openFB} class="mt-5 e1cx0oj30 seo-pages-miqn20-Button-AuthButton" type="button">
                     <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="seo-pages-60w4ze" role="img" version="1.1">
                         <path
                             fill-rule="evenodd"

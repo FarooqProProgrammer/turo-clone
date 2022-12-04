@@ -1,5 +1,7 @@
 import React from 'react'
 import './styles/hero.css'
+import './styles/textOne.css'
+
 function Hero() {
   return (
     <div>
@@ -221,7 +223,7 @@ function Hero() {
         </div>
     </div>
 </div>
-
+<p class="textOne" >Find your drive</p>
     </div>
   )
 }
