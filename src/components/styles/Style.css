@@ -383,3 +383,117 @@ li {
         padding: 8px 12px;
     }
 }
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    border: 0px;
+    padding: 0px;
+}
+* {
+    box-sizing: border-box;
+}
+.seo-pages-miqn20-Button-AuthButton {
+    border-radius: 0px;
+    cursor: pointer;
+    font-family: BasisGrotesque, Avenir, "Helvetica Neue", Helvetica, sans-serif;
+    outline: none;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 16px;
+    line-height: 43px;
+    padding: 0px 14px;
+    display: flex;
+    -webkit-box-Apack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(18, 18, 20);
+    background: none;
+    border: 1px solid rgb(18, 18, 20);
+    font-weight: normal;
+    margin-bottom: 12px;
+    height: 50px;
+}
+.seo-pages-miqn20-Button-AuthButton:hover {
+    background-color: rgb(71, 10, 180);
+    border-color: rgb(71, 10, 180);
+    text-decoration: none;
+}
+.seo-pages-miqn20-Button-AuthButton:hover {
+    background: rgb(231, 231, 232);
+}
+.seo-pages-60w4ze {
+    margin-right: 8px;
+    vertical-align: sub;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+    .seo-pages-miqn20-Button-AuthButton {
+        width: 100%;
+    }
+}
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    border: 0px;
+    padding: 0px;
+}
+* {
+    box-sizing: border-box;
+}
+.seo-pages-miqn20-Button-AuthButton {
+    border-radius: 0px;
+    cursor: pointer;
+    font-family: BasisGrotesque, Avenir, "Helvetica Neue", Helvetica, sans-serif;
+    outline: none;
+    position: relative;
+    text-align: center;
+    transition: all 0.5s ease 0s;
+    user-select: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 16px;
+    line-height: 43px;
+    padding: 0px 14px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    color: rgb(18, 18, 20);
+    background: none;
+    border: 1px solid rgb(18, 18, 20);
+    font-weight: normal;
+    margin-bottom: 12px;
+    height: 50px;
+}
+.seo-pages-miqn20-Button-AuthButton:hover {
+    background-color: rgb(71, 10, 180);
+    border-color: rgb(71, 10, 180);
+    text-decoration: none;
+}
+.seo-pages-miqn20-Button-AuthButton:hover {
+    background: rgb(231, 231, 232);
+}
+.seo-pages-60w4ze {
+    margin-right: 8px;
+    vertical-align: sub;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+    .seo-pages-miqn20-Button-AuthButton {
+        width: 100%;
+    }
+}
